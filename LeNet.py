@@ -1,4 +1,12 @@
 # 最初针对手写数字识别，使用的是输入32*32的图片，
+from __future__ import print_function
+import keras
+from keras.datasets import cifar10
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.layers import Conv2D, MaxPooling2D
+import os
 
 def LeNet_5():
     model = Sequential()

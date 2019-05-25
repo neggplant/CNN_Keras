@@ -1,4 +1,12 @@
 # VGG网络在对Alexnet网络进行了深度的扩展，使用3*3的卷积核替代了5*5的卷积核
+from __future__ import print_function
+import keras
+from keras.datasets import cifar10
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.layers import Conv2D, MaxPooling2D
+import os
 
 def VGG_16():
     model = Sequential()

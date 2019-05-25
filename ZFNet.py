@@ -1,4 +1,12 @@
 # 对AlexNet做了改动，第一层卷积核由11变成7，步长由4变为2，第3，4，5卷积层转变为384，384，256
+from __future__ import print_function
+import keras
+from keras.datasets import cifar10
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.layers import Conv2D, MaxPooling2D
+import os
 
 def ZF_Net():
     model = Sequential()
