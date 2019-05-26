@@ -15,7 +15,7 @@ def LeNet_5():
     model.add(Conv2D(16, (5, 5),strides=(1, 1), padding='valid', activation='relu', kernel_initializer='uniform'))
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Flatten())
-    model.add(Dense(120, activation='relu'))
-    model.add(Dense(84, activation='relu'))
+    model.add(Dense(120, activation='tanh'))
+    model.add(Dense(84, activation='tanh'))
     model.add(Dense(10, activation='softmax'))
     return model

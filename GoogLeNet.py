@@ -10,6 +10,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten, BatchNormalization
 from keras.layers import Conv2D, MaxPooling2D
+from keras.backend import concatenate
 import os
 
 def Conv2d_BN(x, nb_filter,kernel_size, padding='same',strides=(1,1),name=None):
